@@ -7,4 +7,4 @@
     />
   </a>
 </li>`),d=l.join("");s.innerHTML=d;new n(".gallery a");
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=1-gallery.js.map
