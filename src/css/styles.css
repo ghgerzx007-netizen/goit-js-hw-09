@@ -44,3 +44,10 @@
   height: 200px;
   object-fit: cover;
 }
+
+textarea {
+  resize: none;
+ height: 15px;
+ width: 177px;
+  
+}

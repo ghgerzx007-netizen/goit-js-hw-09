@@ -22,3 +22,16 @@ if (savedData !== null) {
   form.elements.email.value = parsedData.email;
   form.elements.message.value = parsedData.message;
 }
+
+form.addEventListener("submit" , event => {
+event.preventDefault();
+if (formData.email.trim() === ""  || formData.message.trim() === ""){
+  alert("Fill please all fields")
+}else{
+console.log(formData)
+ formData.email = ""
+  formData.message = ""
+  form.reset()
+  localStorage.removeItem(storageKey)
+}
+})
