@@ -83,7 +83,8 @@ const galleryMarkup = images.map(image => `<li class="gallery-item">
 const galleryStr = galleryMarkup.join("")
 gallery.innerHTML= galleryStr;
 
-new SimpleLightbox(".gallery a");
+new SimpleLightbox(".gallery a",{captionsData: "alt",
+  captionDelay: 250,});
 
 
 
